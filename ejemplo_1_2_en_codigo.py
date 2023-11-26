@@ -13,7 +13,7 @@ file_handler.setLevel(logging.ERROR)
 
 # Establecemos los formatters y se los pasamos a los handlers
 stream_format = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
-file_format = logging.Formatter('% APP LOG - %(name)s - %(levelname)s - %(message)s')
+file_format = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
 stream_handler.setFormatter(stream_format)
 file_handler.setFormatter(file_format)
 
@@ -22,5 +22,6 @@ file_handler.setFormatter(file_format)
 logger.addHandler(stream_handler)
 logger.addHandler(file_handler)
 
-logger.warning('WARNING!!!')
+logger.warning('info!!!')
+
 logger.error('ERROR!!!!')
