@@ -29,3 +29,4 @@ if __name__ == '__main__':
 
     logger.info("hello world")
     logger.error("Es un error, pero pasa de él")
+    logger.error("Es un error digno de ese nombre")
